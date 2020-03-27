@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+ // function to check whether no. is prime or not
+bool isPrime(int n){  
+    int d = 2 ;
+    while(d <= n/2 && n > 1 ){
+        if( n%d ==0)
+        return false;
+        d++ ;
+    }
+    return true;
+}
+
+
+int main(){
+    for(int i = 2; i <= 100; i++){
+       if(isPrime(i))   // calling function
+       cout << i <<'\n'; // printing only prime numbers from 2-100
+    }
+}
