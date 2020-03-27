@@ -17,6 +17,6 @@ int main(){
     cout << " enter to check number is prime or not  ";
     cin >> n ;
     bool result = isPrime(n); // calling isPrime function
-    cout << result ; // 1 for prime 0 for nn-prime numbers
+    cout << result ; // 1 for prime 0 for non-prime numbers
 
 }
