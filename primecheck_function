@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+// boolean function to check whether no.is prime or not
+bool isPrime(int n){
+    int  d = 2;
+    while(d <= n/2 && n >= 2){
+        if( n%d == 0){
+            return false ; // when no. is not prime
+        }
+        d++;
+    }
+    return true ; //when no. is prime
+}
+int main(){
+    int n ; 
+    cout << " enter to check number is prime or not  ";
+    cin >> n ;
+    bool result = isPrime(n); // calling isPrime function
+    cout << result ; // 1 for prime 0 for nn-prime numbers
+
+}
