@@ -1,0 +1,28 @@
+// functions in c++
+// find  combination of n and r mathematical i.e  n!/(r!*(n-r)!)  
+
+
+#include<iostream>
+using namespace std;
+
+// function to find factorial 
+int factorial(int n){
+int i = 1 , ans = 1 ;
+while(i <= n){
+    ans = ans*i  ;
+    i++ ;
+}
+return ans;
+}
+
+int main(){
+    int n,r ;
+    cout << "enter value of n and r:";
+    cin >> n >>r ;
+    int factN = factorial(n) ; // factorial of n
+    int factR = factorial(r) ; // factrial of r
+    int factN_R = factorial(n-r) ; // factorial of n-r
+    int result = factN/(factR*factN_R);  // final result of combination
+    cout << result <<endl ; 
+
+}
