@@ -6,6 +6,8 @@
 using namespace std;
 
 // function to find factorial 
+
+
 int factorial(int n){
 int i = 1 , ans = 1 ;
 while(i <= n){
@@ -15,10 +17,14 @@ while(i <= n){
 return ans;
 }
 
+// single function used three times in this program 
+// it helps in readability,debugging,reusability of code
+
+
 int main(){
     int n,r ;
     cout << "enter value of n and r:";
-    cin >> n >>r ;
+    cin >> n >> r ;
     int factN = factorial(n) ; // factorial of n
     int factR = factorial(r) ; // factrial of r
     int factN_R = factorial(n-r) ; // factorial of n-r
