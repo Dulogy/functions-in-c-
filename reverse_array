@@ -7,7 +7,7 @@ void reverse_array(int a[],int n){       // reverse array from index 0 to n-1
     while(i < j){
         int temp = a[i] ;               // swap the two numbers first and last position and so on increasing index
         a[i] = a[j] ;                   // from starting and decreasing index from last position 
-        a[j] = temp ;                    // till last index reach the same position as starting position 
+        a[j] = temp ;                    // till last index reach the same position as starting position or one less
         i++;
         j--;
     }
